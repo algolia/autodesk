@@ -1770,52 +1770,13 @@
 
 
 
-                                                        <div class="wd-mh-6 wd-mb-16" data-ng-if="searchResultsController.results.length > 0" data-ng-class="'border-top-' + searchResultsController.determineCategoryColor(result.categories)" data-ng-repeat="result in searchResultsController.results">
-                                                            <div class="list-item-content parsys">
-                                                                <div class="code section">
+                                                        <data-search-result data-result="result" data-ng-if="searchResultsController.results.length > 0" data-ng-repeat="result in searchResultsController.results"></data-search-result>
+                                                           
 
-
-
-
-
-
-
-
-                                                                    <a data-ng-href="{{result.link}}" class="wd-no-underline wd-light">
-                                                                        <div class="wd-box-border-all wp-product-box wd-light">
-
-                                                                            <div class="pro_topsec" style="height: 243px;">
-                                                                                <div class="title">
-                                                                                    <img data-ng-src="{{result.image_link}}">
-
-                                                                                    <span class="wd-bold" data-ng-bind-html="searchResultsController.searchStore.renderHtml(result._highlightResult.title.value)"></span>
-                                                                                </div>
-                                                                                <p class="wd-font-16 hide-for-small results-categories"><span class="wp-desc" data-ng-class="'wp-desc-' + searchResultsController.determineCategoryColor(result.categories)">Categories:</span> <span class="results-categories-wrapper" data-ng-repeat="category in searchResultsController.renderCategories(result._highlightResult.categories) track by $index" data-ng-bind-html="searchResultsController.searchStore.renderHtml(category)"></span>
-                                                                                </p>
-                                                                                <p class="wd-font-16 hide-for-small" data-ng-bind-html="searchResultsController.searchStore.renderHtml(result._highlightResult.description.value)">
-
-                                                                                </p>
-
-                                                                            </div>
-
-                                                                            <div class="price-box pc-07">
-                                                                                <div style="float:left">
-                                                                                    <span class="wd-font-30">£ {{result.price | currency}}
-</span><span class="wd-font-19"> / year</span></div>
-                                                                                <div style="float:right" class="results-cta"><span class="results-cta-text">Buy Now</span><i class="icon-arrow-button wd-font-30"></i></div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-
-                                                            </div>
-
-                                                        </div>
+          
                                                         
                                                         <div data-ng-if="searchResultsController.results.length === 0">No results</div>
 
-                                                    </div>
 
 
 

@@ -9,6 +9,10 @@ import SearchResultsController, {
     searchResultsDirective
 }
 from './components/search-results-component.js';
+import SearchResultController, {
+    searchResultDirective
+}
+from './components/search-result-component.js';
 
 export default angular
     .module('Algolia.AlgoliaSearch', [])
@@ -19,7 +23,9 @@ export default angular
     .controller('SearchInputController', SearchInputController)
     .directive('searchInput', searchInputDirective)
     .controller('SearchResultsController', SearchResultsController)
-    .directive('searchResults', searchResultsDirective);
+    .directive('searchResults', searchResultsDirective)
+    .controller('SearchResultController', SearchResultController)
+    .directive('searchResult', searchResultDirective);
 
 
 angular.bootstrap(document.getElementById("AlgoliaSearch"), ['Algolia.AlgoliaSearch']);

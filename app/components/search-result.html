@@ -1,0 +1,62 @@
+<div class="list-item-content parsys" data-ng-class="'border-top-' + searchResultController.determineCategoryColor(searchResultController.result.categories)">
+    <div class="code section">
+
+
+
+
+
+
+
+
+
+        <div class="wd-box-border-all wp-product-box wd-light">
+
+            <div class="pro_topsec">
+                <div class="title">
+                    <img data-ng-src="{{searchResultController.result.image_link}}">
+
+                    <span class="wd-bold" data-ng-bind-html="searchResultController.searchStore.renderHtml(searchResultController.result._highlightResult.title.value)"></span>
+                </div>
+                <p class="wd-font-16 hide-for-small results-categories"><span class="wp-desc" data-ng-class="'wp-desc-' + searchResultController.determineCategoryColor(searchResultController.result.categories)">Categories:</span> <span class="results-categories-wrapper" data-ng-repeat="category in searchResultController.renderCategories(searchResultController.result._highlightResult.categories) track by $index" data-ng-bind-html="searchResultController.searchStore.renderHtml(category)"></span>
+                </p>
+                <p class="wd-font-16 hide-for-small" data-ng-bind-html="searchResultController.searchStore.renderHtml(searchResultController.result._highlightResult.description.value)">
+
+                </p>
+            </div>
+            <div>
+                <div class="results-options-container" data-ng-class="'border-color-' + searchResultController.determineCategoryColor(searchResultController.result.categories)">
+                    <div data-ng-class="{'active': searchResultController.currentTermDropdownOpen}">
+                    <div class="results-options-item" data-ng-if="searchResultController.currentTerm" data-ng-click="searchResultController.toggleTermDropdown()"><span data-ng-bind="searchResultController.currentTerm"></span><i class="icon-arrow-button"></i>
+                    </div>
+                        <div class="results-options-item-dropdown">
+                            <p data-ng-repeat="termName in searchResultController.getFilteredTermNames(searchResultController.result.options)"
+                               data-ng-click="searchResultController.selectTerm(termName)">{{termName}}</p>
+                        </div>
+                    </div>
+                    <div data-ng-class="{'active': searchResultController.currentSupportDropdownOpen}">
+                    <div class="results-options-item" data-ng-click="searchResultController.toggleSupportDropdown()" data-ng-if="searchResultController.currentSupport"><span data-ng-bind="searchResultController.currentSupport"></span><i class="icon-arrow-button"></i>
+                    </div>
+                        <div class="results-options-item-dropdown">
+                            <p data-ng-repeat="supportName in searchResultController.getFilteredSupportNames(searchResultController.result.options)"
+                               data-ng-click="searchResultController.selectSupport(supportName)">{{supportName}}</p>
+                        </div>
+                        </div>
+                </div>
+
+
+                <a data-ng-href="{{searchResultController.result.link}}" class="wd-no-underline wd-light">
+                    <div class="price-box pc-07">
+
+                        <div style="float:left">
+                            <span class="wd-font-30">£ {{searchResultController.currentPrice | currency}}
+</span><span class="wd-font-19"> / year</span></div>
+                        <div style="float:right" class="results-cta"><span class="results-cta-text">Buy Now</span><i class="icon-arrow-button wd-font-30"></i></div>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
