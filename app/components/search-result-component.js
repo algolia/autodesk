@@ -10,7 +10,7 @@ export function searchResultDirective() {
         controller: 'SearchResultController',
         controllerAs: 'searchResultController',
         bindToController: true,
-        templateUrl: '/app/components/search-result.html',
+        templateUrl: './app/components/search-result.html',
         link: link
     };
 
