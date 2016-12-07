@@ -8,7 +8,23 @@ export function searchInputDirective() {
     };
 
     function link(scope, element, attrs, controller) {
-
+        var elm = element[0];
+        var results = document.querySelectorAll(".body-content.results")[0];
+        
+        window.addEventListener("scroll", function () {
+            window.requestAnimationFrame(toggleFixedHeader);
+        });
+        
+        function toggleFixedHeader() {
+            if (window.scrollY > 274) {
+                elm.classList.add("fixed");
+                results.classList.add("fixed");
+            }
+            else {
+                elm.classList.remove("fixed");
+                results.classList.remove("fixed");
+            }
+        }
     }
 }
 

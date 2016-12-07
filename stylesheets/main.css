@@ -28,6 +28,12 @@
 .wp-all-products select {
   padding-left: 10px; }
 
+.wp-search.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+
 .body-content a.wd-light {
   font-weight: 300; }
 
@@ -214,8 +220,10 @@ right:30px;
   body:not(.cq-wcm-edit) .hero-promo {
     height: 300px; } }
 
-.body-content.parsys {
+.body-content.parsys.results {
   padding-top: 30px; }
+  .body-content.parsys.results.fixed {
+    margin-top: 154px; }
 
 .wp-best-sellers-row {
   display: -webkit-box !important;

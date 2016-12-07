@@ -234,10 +234,13 @@ right:30px;
 }
 
 // ------------- RESULTS - CUSTOM ------------- //
-.body-content.parsys {
+.body-content.parsys.results {
     padding-top: 30px;
+    &.fixed {
+        margin-top: 154px;
+    }
 }
-
+ 
 .wp-best-sellers-row {
     display: flex!important;
     flex-wrap: wrap;
