@@ -60,7 +60,7 @@ class SearchStore {
     clearFilters() {
         this.query = "";
         this.currentCategory = "";
-        this._$rootScope.$evalAsync();
+        this.updateResults();
     }
 
 }
