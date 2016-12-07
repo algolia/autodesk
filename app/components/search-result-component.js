@@ -58,6 +58,10 @@ class SearchResultController {
     get currentPrice() {
         return this._getMatchingPrice(this.result.options);
     }
+    
+    get currentLink() {
+        return this._getMatchingLink(this.result.options);
+    }
 
     determineCategoryInclusion(arr, str) {
         return _.flow(
@@ -97,6 +101,14 @@ class SearchResultController {
         ]);
     }
     
+    get _getMatchingLink() {
+        return _.flow([
+            this.getMatchingTerms,
+            this.getMatchingSupport,
+            this.getLink
+        ]);
+    }
+    
     getMatchingTerms(options) {
         return options.filter(item => item.termName === this.currentTerm);
     }
@@ -107,6 +119,10 @@ class SearchResultController {
     
     getPrice(option) {
         return option[0].price;
+    }
+    
+    getLink(option) {
+        return option[0].link;
     }
 
     getCategoryValues(categories) {
