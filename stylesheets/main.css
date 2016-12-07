@@ -295,4 +295,19 @@ right:30px;
   .results-categories-wrapper:not(:last-child):after {
     content: ", "; }
 
+.results-cta {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2px; }
+  .results-cta-text {
+    padding-right: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 2px; }
+
 /*# sourceMappingURL=main.css.map */

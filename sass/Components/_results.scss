@@ -240,7 +240,7 @@ right:30px;
         margin-top: 154px;
     }
 }
- 
+
 .wp-best-sellers-row {
     display: flex!important;
     flex-wrap: wrap;
@@ -282,15 +282,15 @@ right:30px;
 }
 
 .border-top-red em {
-    background-color: rgba(221,34,34,.08);
+    background-color: rgba(221, 34, 34, .08);
 }
 
 .border-top-blue em {
-    background-color: rgba(17,85,170,.08);
+    background-color: rgba(17, 85, 170, .08);
 }
 
 .border-top-orange em {
-    background-color: rgba(238,85,34,.08);
+    background-color: rgba(238, 85, 34, .08);
 }
 
 .pro_topsec {
@@ -322,6 +322,18 @@ right:30px;
                     content: ", "
                 }
             }
+        }
+    }
+    &-cta {
+        float: right;
+        display: flex;
+        align-items: center;
+        margin-top: 2px;
+        &-text {
+            padding-right: 3px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 2px;
         }
     }
 }
