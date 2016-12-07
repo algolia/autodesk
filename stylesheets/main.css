@@ -1,0 +1,290 @@
+.ng-cloak {
+  visibility: hidden; }
+
+.wp-all-products span.raz.clear {
+  width: auto;
+  padding-right: .6em;
+  height: 3em;
+  padding-top: .4em; }
+
+.wp-all-products .icon-select,
+.wp-all-products .reset {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%; }
+
+.wp-all-products select,
+.wp-all-products input#search {
+  height: 5rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem; }
+  .wp-all-products select::-webkit-input-placeholder,
+  .wp-all-products input#search::-webkit-input-placeholder {
+    font-size: 1.5rem; }
+
+.wp-all-products .wp-search .filter h3 {
+  padding-top: .3em; }
+
+.wp-all-products select {
+  padding-left: 10px; }
+
+.body-content a.wd-light {
+  font-weight: 300; }
+
+.body-content a:visited {
+  color: inherit !important; }
+
+.top-background {
+  background: url("http://static-ww.autodesk.net/content/dam/estore/homepage/01_background_texture.png") repeat top left; }
+
+.long-promo {
+  min-height: 80px;
+  color: white;
+  width: 100%;
+  overflow: auto;
+  padding: 20px 10px 12px 20px; }
+
+.long-promo.banner1 {
+  background: #87BB3F; }
+
+.long-promo.banner2 {
+  background: #619FE1; }
+
+.long-promo div {
+  float: left; }
+
+.long-promo .content {
+  width: 70%; }
+
+.hero-promo {
+  position: relative;
+  padding: 27px 30px 15px 30px; }
+
+.hero-promo.promo-left {
+  background: url("http://static-ww.autodesk.net/content/dam/estore/homepage/banners/estore-respnsive-namer-autocad-lt.jpg") no-repeat top left;
+  background-size: cover; }
+
+.hero-promo.promo-right {
+  background: #dfdfdf url(/content/dam/estore/homepage/banners/autoCAD_image.jpg) no-repeat center right; }
+
+.promo-top {
+  height: auto; }
+
+.promo-top h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 38px; }
+
+.promo-top img {
+  height: 38px; }
+
+.border-top-red {
+  border-top: 6px solid #dd2222; }
+
+.border-top-aqua {
+  border-top: 6px solid #00aaaa; }
+
+.border-top-blue {
+  border-top: 6px solid #1155aa; }
+
+.border-top-orange {
+  border-top: 6px solid #ee5522; }
+
+.wp-product-box {
+  background: #fff url(http://static-ww.autodesk.net/content/dam/estore/homepage/06_geometric_shapes_product_modules.png) top right no-repeat;
+  position: relative;
+  border-top: 0; }
+
+.pro_topsec {
+  min-height: 100px;
+  position: relative;
+  /*height:230px;*/
+  padding: 20px 20px 1px 20px; }
+
+.price-box {
+  position: relative;
+  background: #f7f7f7;
+  text-decoration: none;
+  border-bottom: none;
+  width: 100%;
+  height: 85px;
+  padding: 27px 12px 20px 20px;
+  color: #666; }
+
+.wp-price-strike {
+  margin-top: -10px;
+  display: block;
+  color: #777;
+  text-decoration: line-through;
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 1.105263157894737; }
+
+.wp-price-strike ~ span {
+  color: #dd2222; }
+
+.pro_topsec:hover ~ .price-box {
+  background: #f3fafe;
+  text-decoration: none;
+  border-bottom: none; }
+
+.price-box:hover {
+  background: #f3fafe;
+  text-decoration: none;
+  border-bottom: none; }
+
+.title-icon {
+  width: 60px;
+  margin-right: 15px; }
+
+.title {
+  height: 60px; }
+
+.title img {
+  max-width: 60px;
+  margin-right: 2%;
+  width: 25%; }
+
+.title span {
+  line-height: 21px;
+  font-size: 19px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 70%;
+  color: #666; }
+
+.wp-desc-blue {
+  font-weight: bold;
+  color: #0696d7; }
+
+.wp-desc-red {
+  font-weight: bold;
+  color: #dd2222; }
+
+.bottom-promo {
+  background: url(http://static-ww.autodesk.net/content/dam/estore/homepage/07_geometric_shapes_banner.png) no-repeat top right;
+  min-height: 80px;
+  overflow: auto; }
+
+.bottom-promo a {
+  color: #fff;
+  width: 100%;
+  display: inline-block; }
+
+.bottom-promo a:visited {
+  color: #fff !important; }
+
+.bottom-promo.left-side {
+  background-color: #0695D5; }
+
+.bottom-promo.right-side {
+  background-color: #87BB3F; }
+
+.wp-banner-border {
+  border-right: 0;
+  border-bottom: 1px solid #fff; }
+
+/*tablet and up*/
+@media only screen and (min-width: 40.063em) {
+  .long-promo.banner1 {
+    background: #87BB3F url(http://static-ww.autodesk.net/content/dam/estore/homepage/banners/estore-responsive-10-precent-off.jpg) no-repeat top right; }
+  .long-promo.banner2 {
+    background: #619FE1 url(http://static-ww.autodesk.net/content/dam/estore/homepage/banners/03_3for1_trade_in.jpg) no-repeat top right; } }
+
+/*desktop and up*/
+@media only screen and (min-width: 64.063em) {
+  .wp-banner-border {
+    border-right: 1px solid #fff;
+    border-bottom: 0; }
+  /*
+.hero-promo .promo-price{
+position:absolute; 
+bottom:27px;
+left:30px;
+}
+.hero-promo .promo-cta{
+position:absolute;
+bottom:27px;
+right:30px;
+}
+*/
+  .promo-top {
+    height: 170px; }
+  body:not(.cq-wcm-edit) .hero-promo {
+    height: 300px; } }
+
+.body-content.parsys {
+  padding-top: 30px; }
+
+.wp-best-sellers-row {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 1rem; }
+  .wp-best-sellers-row > div {
+    -ms-flex-preferred-size: calc(33.33333% - 1.2em);
+        flex-basis: calc(33.33333% - 1.2em); }
+    .wp-best-sellers-row > div:nth-child(3n + 1) {
+      margin-left: 0 !important; }
+    .wp-best-sellers-row > div:nth-child(3n) {
+      margin-right: 0 !important; }
+    .wp-best-sellers-row > div .list-item-content.parsys,
+    .wp-best-sellers-row > div .code.section,
+    .wp-best-sellers-row > div .code.section > a,
+    .wp-best-sellers-row > div .wd-box-border-all {
+      height: 100%; }
+  .wp-best-sellers-row .wd-box-border-all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .wp-best-sellers-row em {
+    font-style: normal;
+    padding: 1px;
+    margin: 0 -1px; }
+
+.border-top-aqua em {
+  background-color: rgba(0, 170, 170, 0.08); }
+
+.border-top-aqua em {
+  background-color: rgba(0, 170, 170, 0.08); }
+
+.border-top-red em {
+  background-color: rgba(221, 34, 34, 0.08); }
+
+.border-top-blue em {
+  background-color: rgba(17, 85, 170, 0.08); }
+
+.border-top-orange em {
+  background-color: rgba(238, 85, 34, 0.08); }
+
+.pro_topsec {
+  height: auto !important; }
+
+.results-categories {
+  font-size: 1.4rem;
+  line-height: 1.4; }
+  .results-categories > span:not(.wp-desc) {
+    font-style: italic; }
+  .results-categories .wp-desc {
+    font-weight: bold; }
+  .results-categories .wp-desc-aqua {
+    color: #00aaaa; }
+  .results-categories .wp-desc-blue {
+    color: #1155aa; }
+  .results-categories .wp-desc-orange {
+    color: #ee5522; }
+  .results-categories-wrapper:not(:last-child):after {
+    content: ", "; }
+
+/*# sourceMappingURL=main.css.map */

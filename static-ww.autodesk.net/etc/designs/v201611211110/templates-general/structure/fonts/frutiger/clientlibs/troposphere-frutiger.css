@@ -1,0 +1,43 @@
+/*
+ *  This file is specific to the Frutiger font *only*.
+ *  Please avoid putting generic or layout-related styles here.
+ */
+
+/*  -------------------------
+ *  Normalize-Extension.css
+ *  -------------------------  */
+
+    body{
+        font-family: 'Frutiger',sans-serif;
+        line-height: 1.4;
+    }
+
+    ul{
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 18px;
+        font-weight: normal;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+    }
+
+/*  -------------------------
+ *  Links.css
+ *  -------------------------  */
+
+    .body-content a,
+    .wd-lightbox-container a {
+        font-weight: 700;
+    }
+
+/*  -------------------------
+ *  Local Navigation.less
+ *  -------------------------  */
+
+    .local-navigation .nav-link {
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 1;
+    }
