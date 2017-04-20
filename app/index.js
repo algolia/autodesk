@@ -16,9 +16,9 @@ from './components/search-result-component.js';
 
 export default angular
     .module('Algolia.AlgoliaSearch', [])
-    .constant('APP_ID', 'I4MLOA7VFA')
-    .constant('API_KEY', '80ee2e2198b51c5d3712108ddd33339b')
-    .constant('INDEX', 'demo_index')
+    .constant('APP_ID', 'Q71HM8430Y')
+    .constant('API_KEY', '7f42b7cbd41474bf777414c24302d4a4')
+    .constant('INDEX', 'autodesk')
     .service('searchStore', SearchStore)
     .controller('SearchInputController', SearchInputController)
     .directive('searchInput', searchInputDirective)
